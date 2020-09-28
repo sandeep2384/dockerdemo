@@ -1,4 +1,4 @@
 FROM openjdk:8
-ADD build/libs/docker-springboot.jar docker-springboot.jar
+ADD build/libs/docker-springboot.jar app.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar","docker-springboot.jar"] 
+ENTRYPOINT ["java", "-jar","app.jar"] 
